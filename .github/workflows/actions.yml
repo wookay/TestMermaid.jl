@@ -22,3 +22,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install -g @mermaid-js/mermaid-cli
+      - run: mmdc -V

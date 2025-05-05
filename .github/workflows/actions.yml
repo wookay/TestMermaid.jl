@@ -21,7 +21,4 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run build --if-present
       - run: npm install -g @mermaid-js/mermaid-cli
-      - run: npm test
